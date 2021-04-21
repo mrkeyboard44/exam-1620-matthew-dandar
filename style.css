@@ -1,0 +1,94 @@
+body {
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #9ccfd8;
+    margin: 0;
+    color: #575279;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+    color: #faf4ed;
+    background-color: #3e8fb0;
+    margin: 0;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+h3 {
+    margin: 0.5rem;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #3e8fb0;
+}
+footer {
+    background-color: #3e8fb0;
+    color: #faf4ed;
+    padding: 0.5rem;
+}
+hr {
+    grid-area: l;
+    height: min-content;
+    width: 75%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 0;
+}
+.shop-item {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.cart {
+    background-color: #e0def4;
+    display: grid;
+    grid-template-rows: 50px 30px 15px 1fr;
+    grid-template-areas: 'h' 'r' 'l' 'i';
+    width: 100vw;
+    min-height: 120px;
+}
+.section-header {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+}
+.cart-row {
+    grid-area: r;
+    display: flex;
+    justify-content: space-evenly;
+}
+.band-name {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 640px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .shop-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'a b';
+    }
+    #Album-1, #Album-3 {
+        grid-area: a;
+    }
+    #Album-2, #Album-4 {
+        grid-area: b;
+    }
+}

@@ -74,3 +74,21 @@ p {
     display: flex;
     justify-content: center;
 }
+@media screen and (min-width: 640px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .shop-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'a b';
+    }
+    #Album-1, #Album-3 {
+        grid-area: a;
+    }
+    #Album-2, #Album-4 {
+        grid-area: b;
+    }
+}

@@ -1,0 +1,56 @@
+body {
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #9ccfd8;
+    margin: 0;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+    color: #faf4ed;
+    background-color: #3e8fb0;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    margin: 0.5rem;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #3e8fb0;
+}
+footer {
+    background-color: #3e8fb0;
+}
+hr {
+    grid-area: l;
+    width: max-content;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.cart {
+    background-color: #e0def4;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 1fr;
+    grid-template-areas: 'h' 'r' 'l' 'i';
+    width: 100vw;
+    min-height: 200px;
+}
+.section-header {
+    grid-area: h;
+}
+.cart-row {
+    grid-area: r;
+    display: flex;
+    justify-content: space-evenly;
+}

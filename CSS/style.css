@@ -74,6 +74,12 @@ p {
     display: flex;
     justify-content: center;
 }
+.cart-item-row {
+    grid-area: i;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 @media screen and (min-width: 640px) {
     nav > ul {
         display: flex;
